@@ -11,17 +11,21 @@ El sistema simula el flujo operativo simplificado de un restaurante mediante tre
 2. **Cliente (`modelos/cliente.py`):** Modela al consumidor, maneja su identificación y gestiona la lista de productos que consume mediante un pedido.
 3. **Restaurante (`servicios/restaurante.py`):** Funciona como el componente de servicio central que unifica el catálogo del menú, el registro de clientes y la generación del estado de cuenta o factura.
 
+
+
  Explicación de la Estructura Modular
 
-Repositorio GitHub
+```text
+SEMANA-4-POO/
 ├── restaurante_app/
 │   ├── modelos/
 │   │   ├── producto.py
 │   │   └── cliente.py
-│   ├── servicios/
-│   │   └── restaurante.py
-│   └── main.py
+│   └── servicios/
+│       └── restaurante.py
+├── main.py
 └── README.md
+
 
 La separación del proyecto en las carpetas `modelos/` y `servicios/` obedece al principio de **separación de responsabilidades**. En lugar de tener un archivo monolítico y saturado, los moldes de datos (clases puras) se aíslan de la lógica lógica del negocio o interacción (servicios). Esto incrementa de forma notable la mantenibilidad, escalabilidad y legibilidad del software, permitiendo además que las importaciones en `main.py` mantengan el espacio de nombres limpio y controlado.
 
